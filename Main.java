@@ -5,21 +5,21 @@ import java.util.Scanner;
 public class Main {
 
 	public static void main(String[] args) {
-		double armut=2.14,elma=3.67,domates=1.11,muz=0.95,patlýcan=5.00,toplamTutar ;
-		int alinanElmaKg,alinanArmutKg,alinanDomatesKg,alinanMuzKg,alinanPatlýcanKg;
+		double pearPrice=2.14,applePrice=3.67,tomatoPrice=1.11,bananaPrice=0.95,auberginePrice=5.00,totalPrice ;
+		double appleAmount,pearAmount,tomatoAmount,bananaAmount,aubergineAmount;
 		Scanner scanner=new Scanner(System.in);
-		System.out.println("Kaç kg armut aldýnýz?");
-		alinanArmutKg=scanner.nextInt();
-		System.out.println("Kaç kg elma aldýnýz?");
-		alinanElmaKg=scanner.nextInt();
-		System.out.println("Kaç kg domates aldýnýz?");
-		alinanDomatesKg=scanner.nextInt();
-		System.out.println("Kaç kg muz aldýnýz?");
-		alinanMuzKg=scanner.nextInt();
-		System.out.println("Kaç kg patlýcan aldýnýz?");
-		alinanPatlýcanKg=scanner.nextInt();
-		toplamTutar=(elma*alinanElmaKg)+(armut*alinanArmutKg)+(domates*alinanDomatesKg)+(muz*alinanMuzKg)+(patlýcan*alinanPatlýcanKg);
-		System.out.println("Toplam alýþveriþ tutarý: " + toplamTutar + "TL dir");
+		System.out.println("KaÃ§ kg armut aldÄ±nÄ±z?");
+		pearAmount=scanner.nextDouble();
+		System.out.println("KaÃ§ kg elma aldÄ±nÄ±z?");
+		appleAmount=scanner.nextDouble();
+		System.out.println("KaÃ§ kg domates aldnÄ±z?");
+		tomatoAmount=scanner.nextDouble();
+		System.out.println("KaÃ§ kg muz aldÄ±nÄ±z?");
+		bananaAmount=scanner.nextDouble();
+		System.out.println("KaÃ§ kg patlÄ±can aldÄ±nÄ±z?");
+		aubergineAmount=scanner.nextDouble();
+		totalPrice=(applePrice*appleAmount)+(pearPrice*pearAmount)+(tomatoPrice*tomatoAmount)+(bananaPrice*bananaAmount)+(auberginePrice*aubergineAmount);
+		System.out.println("Toplam alÄ±ÅŸveriÅŸ tutarÄ±: " + totalPrice + "TL'dir");
 	}
 
 }
